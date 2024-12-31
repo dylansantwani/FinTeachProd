@@ -1,0 +1,55 @@
+﻿<!-- (C) 2020 Moses Odhiambo -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crossy Road</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="lib/112.1/three.min.js"></script>
+    <script src="lib/112.1/GLTFLoader.min.js"></script>
+    <script src="lib/112.1/OrbitControls.min.js"></script>
+    <script src="lib/112.1/BufferGeometryUtils.min.js"></script>
+    <script src="lib/stats/stats.min.js"></script>
+    <script src="lib/sweetalert/sweetalert.min.js"></script>
+    <style>
+        #notification {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body onload="firstRun()">
+    <div id="score"></div>
+    <div id="splash">
+        <div id="title">
+            FINANCIAL LITERACY<br/>CROSSY ROAD
+        </div>
+        <div id="loading">
+            <div class="main letter">LOADING</div>
+            <div class="period1 letter">.</div>
+            <div class="period2 letter">.</div>
+            <div class="period3 letter">.</div>
+        </div>
+        <div id="instructions">Use the arrow keys to move<br> around</div>
+        <div id="play">
+            PLAY
+            <button id="pressPlay" disabled onclick="init()"></button>
+        </div>
+    </div>
+    <button id="restart" onclick="init()">Play Again</button>
+    <div id="highScore">HIGH SCORE:0</div>
+    <div id="notification">Chicken is touching grass!</div>
+    <script src="index.js"></script>
+    <div id="feedback" style="display: none;"></div>
+</body>
+</html>
+

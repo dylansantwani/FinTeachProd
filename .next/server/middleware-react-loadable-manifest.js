@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"pages/investment-simulator.js -> ../components/SimpleLineChart":{"id":4281,"files":["static/chunks/4281.a1a64a2b9f25b041.js"]}}';
